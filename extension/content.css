@@ -1,3 +1,42 @@
+body {
+	font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif !important;
+	margin: 0 !important;
+}
+
+.rejs-wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 60em;
+	margin: auto;
+}
+
+.container > header {
+	background-color: var(--oc-red-8) !important;
+	border-color: var(--oc-red-9) !important;
+}
+
+#account {
+	padding: 0 !important;
+}
+
+/* @TODO Only show this element if there are *actually* news */
+#sitenews {
+	font-size: inherit !important;
+	margin: 0 !important;
+	text-align: center;
+	background: var(--oc-red-1) !important;
+}
+
+.is-newslist #content {
+	margin-top: 0 !important;
+	padding: 0 !important;
+}
+
+/* @TODO Use page title as tab title */
+.is-newslist #content > h2 {
+	display: none;
+}
+
 .is-newslist #newslist {
 	width: 100%;
 	max-width: 60em;
