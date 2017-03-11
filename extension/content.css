@@ -65,7 +65,6 @@ body {
 	display: none !important;
 }
 
-/* @TODO Remove prefix JS */
 #newslist article address {
 	order: 1;
 }
