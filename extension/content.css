@@ -1,0 +1,9 @@
+body {
+	background-color: var(--oc-gray-0);
+}
+
+.is-newslist #newslist {
+	width: 100%;
+	max-width: 60em;
+	margin: 3.5em auto;
+}

@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Refined EchoJS",
+  "description": "Beautifies EchoJS and adds useful features.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": ["http://*.echojs.com/*"],
+      "css": [
+        "vendor/open-color.css",
+        "content.css"
+      ],
+      "js": [
+        "content.js",
+        "detect-page.js"
+      ]
+    }
+  ]
+}
