@@ -24,7 +24,8 @@ test("isNewsList", urlMatcherMacro, detectPage.isNewsList, [
 	"http://www.echojs.com/",
 	"http://www.echojs.com/latest/0",
 	"http://www.echojs.com/latest/30",
-	"http://www.echojs.com/usernews/sbruchmann/0"
+	"http://www.echojs.com/usernews/sbruchmann/0",
+	"http://www.echojs.com/saved/0"
 ], [
 	"http://www.echojs.com/news/22168",
 	"http://www.echojs.com/replies"
