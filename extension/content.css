@@ -91,12 +91,22 @@ body {
 	border-width: 0.0625em 0 0 0;
 	border-style: solid;
 	border-color: var(--oc-gray-3);
+	color: var(--oc-gray-6);
 }
 
-#newslist .author {
-	color: inherit;
+#newslist .score,
+#newslist .author,
+#newslist .timeAgo,
+#newslist .comments {
+	flex-basis: 25%;
 }
 
 #newslist .author::before {
 	content: "@";
+}
+
+#newslist .timeAgo,
+#newslist .comments {
+	text-align: right;
+	color: inherit;
 }

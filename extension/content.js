@@ -37,6 +37,10 @@ const improveNewslistItem = ($item) => {
 		$meta.appendChild($timeAgo);
 	}
 
+	const $comments = $item.querySelector("p > a").cloneNode(true);
+	$comments.classList.add("comments");
+	$meta.appendChild($comments);
+
 	const $originalMeta = $item.querySelector("p");
 	$item.replaceChild($meta, $originalMeta);
 };
