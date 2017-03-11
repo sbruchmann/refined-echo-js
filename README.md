@@ -10,3 +10,11 @@ This extension is <del>blatantly copied</del> highly inspired by <a href="https:
 I visit Echo JS regularly and want to _modernize_ its design and functionalities.
 
 My hope is that Echo JS will notice and implement some of these improvements.
+
+Status
+------
+
+This is extension is currently work in progress. Feature and pull requests are
+appreciated.
+
+<img alt="Screenshot of Refined Echo JS in action" align="center" src="screenshot.png" />
