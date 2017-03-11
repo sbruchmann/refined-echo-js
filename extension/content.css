@@ -92,3 +92,11 @@ body {
 	border-style: solid;
 	border-color: var(--oc-gray-3);
 }
+
+#newslist .author {
+	color: inherit;
+}
+
+#newslist .author::before {
+	content: "@";
+}
