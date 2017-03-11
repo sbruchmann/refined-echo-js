@@ -1,6 +1,8 @@
 body {
 	font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif !important;
 	margin: 0 !important;
+	color: var(--oc-gray-8) !important;
+	background: var(--oc-white) !important;
 }
 
 .rejs-wrapper {
@@ -41,4 +43,39 @@ body {
 	width: 100%;
 	max-width: 60em;
 	margin: 3.5em auto;
+}
+
+.is-newslist #newslist article {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 2em 0 !important;
+	padding: 1em 2em !important;
+	border-color: var(--oc-gray-3);
+}
+
+.is-newslist #newslist article.active {
+	border-style: solid;
+	border-color: var(--oc-gray-5);
+	background-color: var(--oc-gray-0);
+}
+
+/* @TODO Re-implement voting via JS */
+.is-newslist .uparrow,
+.is-newslist .downarrow {
+	display: none !important;
+}
+
+/* @TODO Remove prefix JS */
+#newslist article address {
+	order: 1;
+}
+
+#newslist article h2 {
+	order: 2;
+}
+
+/* @TODO Reimplement via JS */
+#newslist p {
+	margin: 0 !important;
+	order: 3;
 }
