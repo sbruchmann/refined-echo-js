@@ -50,7 +50,9 @@ body {
 	flex-direction: column;
 	margin: 0 0 2em 0 !important;
 	padding: 1em 2em !important;
+	padding-bottom: 0.5em !important;
 	border-color: var(--oc-gray-3);
+	color: var(--oc-gray-6);
 }
 
 .is-newslist #newslist article.active {
@@ -66,15 +68,27 @@ body {
 }
 
 #newslist article address {
-	order: 1;
+	order: 2;
+	margin: 0 0 1em 0;
 }
 
 #newslist article h2 {
-	order: 2;
+	order: 1;
+	margin: 0 !important;
+	color: var(--oc-gray-8) !important;
 }
 
-/* @TODO Reimplement via JS */
-#newslist p {
-	margin: 0 !important;
+#newslist article h2 a {
+	color: inherit;
+}
+
+#newslist .meta {
+	display: flex;
+	justify-content: space-between;
 	order: 3;
+	font-size: 0.875em;
+	padding: 0.5em 0;
+	border-width: 0.0625em 0 0 0;
+	border-style: solid;
+	border-color: var(--oc-gray-3);
 }
